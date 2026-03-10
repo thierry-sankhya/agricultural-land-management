@@ -1,0 +1,4 @@
+project_id,stratum_id,year,soc_stock_tC_ha,soc_stock_tCO2e_ha,soc_change_tC_ha_yr,soc_change_tCO2e_ha_yr,total_change_tCO2e_yr,uncertainty_pct,conservative_adjustment_pct,creditable_change_tCO2e_yr
+PRJ_001,STRAT_A,2024,4.1634,15.2657,0.0,0.0,0.0,0.15,0.1,0.0
+PRJ_001,STRAT_B,2024,2.2844,8.3761,-1.7258,-6.3279,-567.6094,0.15,0.1,0.0
+PRJ_002,STRAT_A,2024,4.1634,15.2657,0.0,0.0,0.0,0.15,0.1,0.0
