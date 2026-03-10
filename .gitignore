@@ -1,0 +1,9 @@
+.idea/
+__pycache__/
+*.pyc
+~$*.xlsx
+~$*.xls
+.venv/
+venv/
+*.log
+data/my_project/outputs/

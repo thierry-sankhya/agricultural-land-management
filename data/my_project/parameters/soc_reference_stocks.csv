@@ -1,0 +1,4 @@
+climate_zone,soil_type,depth_basis_cm,soc_ref_tC_ha
+warm_temperate_moist,high_activity_clay,30,60
+warm_temperate_moist,sandy_soils,30,34
+cool_temperate_moist,high_activity_clay,30,80

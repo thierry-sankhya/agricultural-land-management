@@ -1,0 +1,5 @@
+project_id,stratum_id,year,land_use_class,dominant_management_regime,input_regime,water_regime,crop_type,cover_crop_flag,rotation_class,tillage_class,residue_return_pct,synthetic_n_kg_ha,organic_n_kg_ha,manure_applied_flag,irrigated_flag,irrigation_mm,grazing_intensity_class,amendment_type,amendment_dry_t_ha,biochar_dry_t_ha,diesel_l_ha,passes_count
+PRJ_001,STRAT_A,2026,cropland,reduced_tillage,medium,rainfed,corn,TRUE,maize_legume,reduced_till,85,95,0,FALSE,TRUE,320,none,compost,2.5,0,42,3
+PRJ_001,STRAT_A,2027,cropland,reduced_tillage,medium,rainfed,soy,TRUE,maize_legume,no_till,90,10,0,FALSE,TRUE,210,none,compost,1.8,0,26,2
+PRJ_001,STRAT_B,2026,cropland,reduced_tillage,medium,rainfed,wheat,FALSE,wheat_only,full_till,35,120,0,FALSE,FALSE,0,none,none,0,0,58,6
+PRJ_002,STRAT_A,2024,grassland,improved_grazing,low,rainfed,perennial grassland,FALSE,paddock,no_till,90,60,30,FALSE,FALSE,0,low-moderate,lime,1.25,0,10,2

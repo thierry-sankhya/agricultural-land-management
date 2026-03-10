@@ -1,0 +1,5 @@
+soil_type_map:
+  Hanford:
+    soil_type: HAC_loam
+  Diablo:
+    soil_type: HAC_clay_loam

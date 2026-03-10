@@ -1,0 +1,6 @@
+﻿land_use_class,management_regime,input_regime,water_regime,flu,fmg,fi,source,version,notes
+cropland,conventional_till,medium_input,non_irrigated,0.8,1,1,IPCC_demo,v1,
+cropland,reduced_till_cover_crop,medium_input,irrigated,0.8,1.08,1.11,IPCC_demo,v1,
+cropland,no_till_cover_crop,high_input,irrigated,0.8,1.15,1.2,IPCC_demo,v1,
+grassland,improved_grazing,medium_input,non_irrigated,1,1.1,1.05,IPCC_demo,v1,
+agroforestry,tree_crop_mosaic,medium_input,irrigated,1.1,1.08,1.15,expert_demo,v1,nonstandard illustrative

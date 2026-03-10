@@ -1,0 +1,6 @@
+cropland: "Cropland"
+grassland: "Grassland"
+forest: "Forest Land"
+wetland: "Wetland"
+settlements: "Settlements"
+other_land: "Other Land"

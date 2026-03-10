@@ -1,0 +1,11 @@
+management_regime_map:
+  conventional_till:
+    tillage_class: full_till
+    residue_return_class: low
+    cover_crop: false
+    management_regime: conventional_till
+  reduced_till_cover_crop:
+    tillage_class: reduced_till
+    residue_return_class: high
+    cover_crop: true
+    management_regime: reduced_till_cover_crop

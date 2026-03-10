@@ -1,0 +1,9 @@
+tier_1:
+  default_uncertainty: 0.20
+  conservative_deduction: 0.15
+tier_2:
+  default_uncertainty: 0.10
+  conservative_deduction: 0.05
+tier_3:
+  default_uncertainty: 0.05
+  conservative_deduction: 0.02

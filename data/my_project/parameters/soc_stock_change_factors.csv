@@ -1,0 +1,6 @@
+climate_zone,land_use_class,management_regime,input_regime,water_regime,flu,fmg,fi
+warm_temperate_moist,cropland,full_tillage,medium,rainfed,0.69,1.0,1.0
+warm_temperate_moist,cropland,reduced_tillage,medium,rainfed,0.69,1.02,1.0
+warm_temperate_moist,cropland,no_tillage,medium,rainfed,0.69,1.10,1.0
+warm_temperate_moist,grassland,nominal_grazing,low,rainfed,1.0,1.0,1.0
+warm_temperate_moist,grassland,improved_grazing,low,rainfed,1.0,1.14,1.0

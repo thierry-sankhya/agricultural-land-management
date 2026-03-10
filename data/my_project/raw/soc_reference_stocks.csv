@@ -1,0 +1,5 @@
+﻿climate_zone,soil_type,depth_basis_cm,soc_ref_tC_ha,source,version,notes
+warm_temperate_dry,HAC_loam,30,38,IPCC_default_demo,v2026.03,illustrative
+warm_temperate_dry,HAC_clay_loam,30,46,IPCC_default_demo,v2026.03,illustrative
+cool_temperate_moist,HAC_loam,30,62,IPCC_default_demo,v2026.03,illustrative
+warm_temperate_moist,sandy_loam (Tenosol),30,48,NSW_DSM_v2.0_mean,v2026.03,Derived from NSW DSM v2.0 SOC stock (0–30 cm) for warm‑temperate moist sandy soils; suitable for improved grazing baseline

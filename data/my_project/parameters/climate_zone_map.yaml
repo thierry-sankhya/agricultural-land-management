@@ -1,0 +1,5 @@
+climate_zone_map:
+  california_san_joaquin_valley:
+    climate_zone: warm_temperate_dry
+  california_coastal:
+    climate_zone: warm_temperate_moist

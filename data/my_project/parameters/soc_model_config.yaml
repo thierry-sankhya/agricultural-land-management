@@ -1,0 +1,7 @@
+project_id: p001
+accounting_mode: hybrid # measured_stock, factor_based, hybrid
+transition_period_years: 20
+default_uncertainty_pct: 0.15
+default_conservative_deduction_pct: 0.10
+reporting_unit: tCO2e
+depth_standard_cm: 30
