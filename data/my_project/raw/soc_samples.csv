@@ -2,9 +2,10 @@ sample_id,project_id,stratum_id,plot_id,sample_event_id,sample_date,depth_top_cm
 SOCSAMP_001_0001,PRJ_001,STRAT_A,PLOT_001,EVT_2026_01,4/15/2026,0,10,1.85,1.28,0.05,18.2,6.4,loam,dry_combustion,34.123,-118.321,approved,
 SOCSAMP_001_0002,PRJ_001,STRAT_A,PLOT_001,EVT_2026_01,4/15/2026,10,30,1.22,1.36,0.08,20.5,6.3,loam,dry_combustion,34.123,-118.321,approved,
 SOCSAMP_001_0003,PRJ_001,STRAT_B,PLOT_014,EVT_2026_01,4/17/2026,0,10,2.1,1.11,0.02,22,6.8,clay_loam,dry_combustion,34.127,-118.355,approved,
+SOCSAMP_001_0004,PRJ_001,STRAT_B,PLOT_014,EVT_2026_01,4/17/2026,10,30,1.85,1.2,0.08,24,6.7,clay_loam,dry_combustion,34.127,-118.355,approved,
 SOCSAMP_002_0001,PRJ_002,STRAT_A,PLOT_005,EVT_2023_01,9/12/2023,0,10,1.1,1.48,0.06,17.5,5.9,sandy_loam,dry_combustion,-31.5,151.5,approved,Baseline sample; continuous grazing; low SOC typical of sandy Tenosol.
-SOCSAMP_002_0002,PRJ_002,STRAT_A,PLOT_005,EVT_2023_01,9/12/2023,10,30,0.55,1.52,0.08,19,6,sandy_loam,dry_combustion,-31.5,151.5,approved,Baseline subsoil; low clay content; stable BD.
+SOCSAMP_002_0002,PRJ_002,STRAT_A,PLOT_005,EVT_2023_01,9/12/2023,10,30,0.65,1.52,0.08,19,6,sandy_loam,dry_combustion,-31.5,151.5,approved,Baseline subsoil; low clay content; stable BD.
 SOCSAMP_002_0003,PRJ_002,STRAT_A,PLOT_018,EVT_2023_01,9/13/2023,0,10,1.25,1.46,0.05,18.8,5.8,sandy_loam,dry_combustion,-31.5025,151.503,approved,Baseline sample; similar management to PLOT_005; slight slope.
-SOCSAMP_002_0004,PRJ_002,STRAT_A,PLOT_018,EVT_2023_01,9/13/2023,10,30,0.6,1.5,0.07,20.1,5.9,sandy_loam,dry_combustion,-31.5025,151.503,approved,Baseline subsoil; consistent with Tenosol profile.
+SOCSAMP_002_0004,PRJ_002,STRAT_A,PLOT_018,EVT_2023_01,9/13/2023,10,30,0.8,1.5,0.07,20.1,5.9,sandy_loam,dry_combustion,-31.5025,151.503,approved,Baseline subsoil; consistent with Tenosol profile.
 SOCSAMP_002_0005,PRJ_002,STRAT_A,PLOT_024,EVT_2026_01,4/20/2026,0,10,1.65,1.42,0.04,21,6.2,sandy_loam,dry_combustion,-31.498,151.497,approved,Project sample; rotational grazing since 2024; improved groundcover.
-SOCSAMP_002_0006,PRJ_002,STRAT_A,PLOT_024,EVT_2026_01,4/20/2026,10,30,0.95,1.47,0.06,22.3,6.1,sandy_loam,dry_combustion,-31.498,151.497,approved,Project subsoil; early signs of SOC stabilization under improved management.
+SOCSAMP_002_0006,PRJ_002,STRAT_A,PLOT_024,EVT_2026_01,46132,10,30,0.95,1.47,0.06,22.3,6.1,sandy_loam,dry_combustion,-31.498,151.497,approved,Project subsoil; early signs of SOC stabilization under improved management.

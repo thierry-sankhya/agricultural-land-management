@@ -1,6 +1,14 @@
-﻿land_use_class,management_regime,input_regime,water_regime,flu,fmg,fi,source,version,notes
-cropland,conventional_till,medium_input,non_irrigated,0.8,1,1,IPCC_demo,v1,
-cropland,reduced_till_cover_crop,medium_input,irrigated,0.8,1.08,1.11,IPCC_demo,v1,
-cropland,no_till_cover_crop,high_input,irrigated,0.8,1.15,1.2,IPCC_demo,v1,
-grassland,improved_grazing,medium_input,non_irrigated,1,1.1,1.05,IPCC_demo,v1,
-agroforestry,tree_crop_mosaic,medium_input,irrigated,1.1,1.08,1.15,expert_demo,v1,nonstandard illustrative
+﻿climate_zone,land_use_class,management_regime,input_regime,water_regime,flu,fmg,fi,source,version,notes
+all,cropland,conventional_till,medium_input,non_irrigated,0.8,1,1,IPCC_demo,v1.0,
+all,cropland,reduced_till_cover_crop,medium_input,irrigated,0.8,1.08,1.11,IPCC_demo,v1.0,
+all,cropland,no_till_cover_crop,high_input,irrigated,0.8,1.15,1.2,IPCC_demo,v1.0,
+all,grassland,improved_grazing,medium_input,non_irrigated,1,1.1,1.05,IPCC_demo,v1.0,
+all,agroforestry,tree_crop_mosaic,medium_input,irrigated,1.1,1.08,1.15,expert_demo,v1.0,nonstandard illustrative
+all,grassland,rotational_grazing,low_input,rainfed,1,1.15,1.08,NSW_DPI_DPIRD_synthesis,v1.0,Rotational grazing with multi‑paddock rest; apply only when documented rest periods and groundcover targets met; uncertainty ±15%.
+warm_temperate_moist,grassland,continuous_grazing,low_input,rainfed,0.95,0.95,0.98,NSW_DPI_DPIRD_synthesis,v1.0,Baseline typical; conservative multipliers for sandy loam Tenosols; uncertainty ±20%.
+warm_temperate_moist,grassland,improved_grazing,low_input,rainfed,1,1.1,1.05,NSW_DPI_DPIRD_synthesis,v1.0,"Improved grazing (rest periods, modest pasture improvement); uncertainty ±15%."
+warm_temperate_moist,grassland,rotational_grazing,low_input,rainfed,1,1.15,1.08,NSW_DPI_DPIRD_synthesis,v1.0,Rotational grazing with multi‑paddock rest; apply only when documented rest periods and groundcover targets met; uncertainty ±15%.
+warm_temperate_dry,cropland,full_till_low_residue,low_input,non_irrigated,0.85,0.85,0.95,USDA regional syntheses,v1.0,"full inversion tillage with low residue retention reduces surface SOC and accelerates decomposition; apply conservative bounds (multiplier_low ≈ 0.75, multiplier_high ≈ 0.95). Ramp effect over 5 years to reflect gradual SOC decline under continued practice. Evidence: national/regional CSA reviews and tillage meta‑analyses."
+warm_temperate_dry,cropland,conventional_till,medium_input,non_irrigated,0.9,0.95,0.98,USDA / peer literature,v1.0,typical conventional tillage; moderate SOC loss risk relative to reduced‑till. Use lower bound for crediting; multiplier bounds ≈ 0.82–1.05. Ramp 5 years.
+warm_temperate_dry,cropland,reduced_till_cover_crop,medium_high_input,irrigated_seasonal,1,1.12,1.1,UC Davis / peer studies,v1.0,"reduced till combined with cover cropping can increase net ecosystem C balance, but effectiveness is site‑specific (soil texture, cover crop species, biomass). Use monitoring triggers (documented cover crop biomass, residue retention) before applying full multipliers; multiplier bounds ≈ 0.95–1.30. Ramp 7 years to reflect slower SOC accrual and interannual variability. Recent California studies show cover crop + reduced till benefits depend strongly on texture and local conditions."
+warm_temperate_dry,cropland,conventional_till,medium_input,non_irrigated,0.9,0.95,0.98,USDA / peer literature,v1.0,typical conventional tillage; moderate SOC loss risk relative to reduced‑till. Use lower bound for crediting; multiplier bounds ≈ 0.82–1.05. Ramp 5 years.

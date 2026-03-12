@@ -11,7 +11,7 @@ def aggregate_measured_to_stratum(samples: List[SOCSample], project_id: str, str
     # 1. Group layers by plot
     plot_stocks = defaultdict(float)
     for sample in samples:
-        if sample.stratum_id == stratum_id:
+        if sample.project_id == project_id and sample.stratum_id == stratum_id:
             plot_stocks[sample.plot_id] += calculate_layer_stock(sample)
     
     # 2. Average plot stocks for stratum

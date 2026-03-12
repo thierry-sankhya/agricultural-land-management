@@ -1,6 +1,6 @@
 import csv
 import yaml
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from typing import List, Dict, Any
 from ialm_carbon.domain.soc_entities import SOCSample, SOCStratum
 from ialm_carbon.methods.soc.model_spec import SOCModelSpec
@@ -9,6 +9,10 @@ from ialm_carbon.methods.soc.factor_sets import SOCFactorSet
 def parse_date(date_str: str) -> date:
     if not date_str:
         return None
+    # Handle numeric Excel-style dates
+    if date_str.isdigit():
+        return date(1899, 12, 30) + timedelta(days=int(date_str))
+    
     for fmt in ('%Y-%m-%d', '%m/%d/%Y', '%d/%m/%Y'):
         try:
             return datetime.strptime(date_str, fmt).date()
@@ -78,6 +82,8 @@ def load_strata(filepath: str) -> List[SOCStratum]:
                         water_regime=row['water_regime'],
                         baseline_land_use=row['baseline_land_use'],
                         baseline_management=row['baseline_management'],
+                        soc_impact=row.get('soc_impact'),
+                        transition_period_years=float(row['transition_period_years']) if row.get('transition_period_years') else None,
                         stratum_name=row.get('stratum_name'),
                         grazing_regime=row.get('grazing_regime'),
                         agroforestry_system=row.get('agroforestry_system'),
@@ -97,6 +103,7 @@ def load_model_config(filepath: str) -> SOCModelSpec:
             project_id=config['project_id'],
             accounting_mode=config['accounting_mode'],
             transition_period_years=config.get('transition_period_years', 20),
+            transition_period_years_map=config.get('transition_period_years_map', {}),
             default_uncertainty_pct=config.get('default_uncertainty_pct', 0.15),
             default_conservative_deduction_pct=config.get('default_conservative_deduction_pct', 0.10),
             depth_standard_cm=config.get('depth_standard_cm', 30.0)
@@ -127,10 +134,10 @@ def load_factor_sets(filepath: str, ref_stocks_filepath: str) -> List[SOCFactorS
     factor_sets = []
     reader = csv.DictReader(io.StringIO(factor_content))
     for row in reader:
-        climate = row['climate_zone'] if 'climate_zone' in row else None
+        climate = row.get('climate_zone')
         
         for (cz, st), ref_val in ref_stocks.items():
-            if climate is None or cz == climate:
+            if not climate or climate == 'all' or cz == climate:
                 factor_sets.append(SOCFactorSet(
                     climate_zone=cz,
                     soil_type=st,

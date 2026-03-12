@@ -37,6 +37,8 @@ class SOCStratum:
     water_regime: str
     baseline_land_use: str
     baseline_management: str
+    soc_impact: Optional[str] = None
+    transition_period_years: Optional[float] = None
     stratum_name: Optional[str] = None
     grazing_regime: Optional[str] = None
     agroforestry_system: Optional[str] = None

@@ -35,7 +35,7 @@ def main():
     # 2. Process each stratum
     for stratum in strata:
         # For demo, we'll use factor-based if no samples, otherwise measured
-        stratum_samples = [s for s in samples if s.stratum_id == stratum.stratum_id]
+        stratum_samples = [s for s in samples if s.project_id == stratum.project_id and s.stratum_id == stratum.stratum_id]
         
         # Calculate Current Stock
         if stratum_samples:
@@ -55,8 +55,17 @@ def main():
                             and f.management_regime == stratum.baseline_management]
         baseline_stock_tC_ha = calculate_ipcc_stock(baseline_factors[0]) if baseline_factors else current_stock_tC_ha
 
+        # Determine Transition Period
+        if stratum.transition_period_years:
+            transition_period = stratum.transition_period_years
+        elif stratum.soc_impact and stratum.soc_impact in config.transition_period_years_map:
+            range_vals = config.transition_period_years_map[stratum.soc_impact]
+            transition_period = sum(range_vals) / len(range_vals)
+        else:
+            transition_period = config.transition_period_years
+
         # Stock Change
-        annual_change_tC_ha = calculate_annual_stock_change(baseline_stock_tC_ha, current_stock_tC_ha, config.transition_period_years)
+        annual_change_tC_ha = calculate_annual_stock_change(baseline_stock_tC_ha, current_stock_tC_ha, transition_period)
         annual_change_tCO2e_ha = convert_tc_to_tco2e(annual_change_tC_ha)
         total_change_tCO2e = annual_change_tCO2e_ha * stratum.area_ha
         

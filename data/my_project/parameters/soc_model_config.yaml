@@ -1,6 +1,11 @@
-project_id: p001
+project_id: PRJ_001
 accounting_mode: hybrid # measured_stock, factor_based, hybrid
 transition_period_years: 20
+transition_period_years_map:
+  high_impact: [3, 5]
+  moderate_impact: [5, 7]
+  low_impact: [7, 12]
+  slow_impact: [10, 15]
 default_uncertainty_pct: 0.15
 default_conservative_deduction_pct: 0.10
 reporting_unit: tCO2e

@@ -1,11 +1,12 @@
-from dataclasses import dataclass
-from typing import Optional
+from dataclasses import dataclass, field
+from typing import Optional, Dict, List
 
 @dataclass
 class SOCModelSpec:
     project_id: str
     accounting_mode: str  # measured_stock, factor_based, hybrid
     transition_period_years: int = 20
+    transition_period_years_map: Dict[str, List[int]] = field(default_factory=dict)
     default_uncertainty_pct: float = 0.15
     default_conservative_deduction_pct: float = 0.10
     depth_standard_cm: float = 30.0
